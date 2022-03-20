@@ -459,7 +459,7 @@ function popcerrar() {
                    <br>
                    <br> 
                     <button type="button" class="btn btn-sm btn-warning" style="font-size: 11px;"  title="Modificar aviso" ><i class="fas fa-pen-square"></i></button>
-                    <button type="button" class="btn btn-sm btn-info" style="font-size: 11px;"  title="Eliminar aviso" ><i class="fa fa-trash" aria-hidden="true"></i></button> 
+                    <button type="button" class="btn btn-sm btn-danger" style="font-size: 11px;"  title="Eliminar aviso" ><i class="fa fa-trash" aria-hidden="true"></i></button> 
                     </td>
                     @else
 
