@@ -1,0 +1,9 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^tranmuni\.teamside\.mx$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.tranmuni\.teamside\.mx$
+RewriteRule ^/?$ "https\:\/\/tranmuni\.teamside\.mx\/public\/" [R=301,L]
+RewriteCond %{HTTP_HOST} ^recide4t\.org$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.recide4t\.org$
+RewriteRule ^/?$ "https\:\/\/recide4t\.org\/public\/" [R=301,L]
+
