@@ -353,6 +353,17 @@ function popcerrar() {
   popup.classList.remove('active');
 }
 
+function borrarEvento(id) {
+    // body...
+    var a = confirm('¿Esta seguro de que desea borrar a este aviso?');
+    //var idR= $('#uni').val();
+    var idAv = id;
+    if(a){
+        window.location="/eliminaEvento/" + idAv ;
+       
+    }
+}
+
 </script>
 <body onload="actualizarGrafica()"></body>
 <div class="container">
@@ -416,7 +427,7 @@ function popcerrar() {
                   <td style="text-align: left; font-size: 12px;">
                      <!-- Attachment -->
                     <div class="attachment-block clearfix">
-                      <img class="attachment-img" src="/public/img/avisos.png" alt="Attachment Image" style="width: 30px; height: 30px;"/>
+                      <img class="attachment-img" src="/img/avisos.png" alt="Attachment Image" style="width: 30px; height: 30px;"/>
                       <h6 class="attachment-heading"><a href="">{{$item['titulo_aviso']}}</a></h6>
                         <div class="attachment-text">
                           <?php
@@ -459,7 +470,7 @@ function popcerrar() {
                    <br>
                    <br> 
                     <button type="button" class="btn btn-sm btn-warning" style="font-size: 11px;"  title="Modificar aviso" ><i class="fas fa-pen-square"></i></button>
-                    <button type="button" class="btn btn-sm btn-danger" style="font-size: 11px;"  title="Eliminar aviso" ><i class="fa fa-trash" aria-hidden="true"></i></button> 
+                    <button type="button" class="btn btn-sm btn-danger" style="font-size: 11px;"  title="Eliminar aviso" onclick="borrarEvento()" ><i class="fa fa-trash" aria-hidden="true"></i></button> 
                     </td>
                     @else
 

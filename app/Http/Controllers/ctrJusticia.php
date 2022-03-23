@@ -605,7 +605,7 @@ ap.PUP, ap.MORENA, ap.PNA, ap.PES, ap.RSP, ap.FPM, ap.PRI_PAN_PRD, ap.PRI_PAN, a
     }
 
     /* ELIMINAR UNA NOTICIA */
-    public function eliminaNoticia($idAv , $idR)
+    public function eliminaEvento($idAv)
     {
         $userNombre = '';
         $msj = "";
@@ -622,7 +622,7 @@ ap.PUP, ap.MORENA, ap.PNA, ap.PES, ap.RSP, ap.FPM, ap.PRI_PAN_PRD, ap.PRI_PAN, a
         }
         //$venta->delete();
         tb_avisos::where('id','=',$idAv)->delete();
-        $txt = "ActividadesPanel/".$idR."";
+        $txt = "home/";
         return redirect($txt);
         //return $venta;
     }

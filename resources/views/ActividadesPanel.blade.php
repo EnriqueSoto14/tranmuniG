@@ -23,14 +23,14 @@
     var idR= $('#uni').val();
     var idC = id;
     if(a){
-        window.location="/public/eliminaActividad/" + idC +"/"+ idR +"";
+        window.location="/eliminaActividad/" + idC +"/"+ idR +"";
        
     }
 }
 
 function tablapdf() {
   var unidad = $('#uni').val();
-  window.location="/public/descargarPDF/" + unidad +"";
+  window.location="/descargarPDF/" + unidad +"";
 
 }
 
@@ -126,7 +126,7 @@ function tablapdf() {
                           <td>{{ $arregloDatosItem['fecha_inicio'] }}</td>
                           <td>{{ $arregloDatosItem['fecha_fin'] }}</td>
                           <td>{{ $arregloDatosItem['recursos'] }}</td>
-                          <td align="center"><a href="/public/subirArchivo/{{$id_rol}}/{{$arregloDatosItem['actividad']}}">
+                          <td align="center"><a href="/subirArchivo/{{$id_rol}}/{{$arregloDatosItem['actividad']}}">
                              <button type="button"class="btn btn-info btn-md"><span class="fa fa-folder-open"></span></button>
                                </a> </td>
                           <td>{{ $arregloDatosItem['estatus'] }}</td>
