@@ -470,7 +470,7 @@ function borrarEvento(id) {
                      <td style="text-align: center; font-size: 12px;">
                    <br>
                    <br>                    
-                    <button type="button" class="btn btn-sm btn-warning" style="font-size: 11px;"  title="Modificar aviso" ><i class="fas fa-pen-square"></i></button>
+                    <button type="button" class="btn btn-sm " style="font-size: 11px;"  title="Modificar aviso" ><i class="fas fa-pen-square"></i></button>
                        
                     <button type="button" class="btn btn-sm btn-danger" style="font-size: 11px;"  title="Eliminar aviso" onclick="borrarEvento()" ><i class="fa fa-trash" aria-hidden="true"></i></button> 
                       
