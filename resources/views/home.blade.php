@@ -357,9 +357,10 @@ function borrarEvento(id) {
     // body...
     var a = confirm('¿Esta seguro de que desea borrar a este aviso?');
     //var idR= $('#uni').val();
+    
     var idAv = id;
     if(a){
-        window.location="/eliminaEvento/" + idAv ;
+        window.location="/eliminaEvento/"+ idAv + "";
        
     }
 }
@@ -468,9 +469,11 @@ function borrarEvento(id) {
                     @if(Auth::user()->ID_ROL_LLAVE_FK == 1 || Auth::user()->id == 4)
                      <td style="text-align: center; font-size: 12px;">
                    <br>
-                   <br> 
+                   <br>                    
                     <button type="button" class="btn btn-sm btn-warning" style="font-size: 11px;"  title="Modificar aviso" ><i class="fas fa-pen-square"></i></button>
+                       
                     <button type="button" class="btn btn-sm btn-danger" style="font-size: 11px;"  title="Eliminar aviso" onclick="borrarEvento()" ><i class="fa fa-trash" aria-hidden="true"></i></button> 
+                      
                     </td>
                     @else
 

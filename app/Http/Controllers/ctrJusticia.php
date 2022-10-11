@@ -622,7 +622,8 @@ ap.PUP, ap.MORENA, ap.PNA, ap.PES, ap.RSP, ap.FPM, ap.PRI_PAN_PRD, ap.PRI_PAN, a
         }
         //$venta->delete();
         tb_avisos::where('id','=',$idAv)->delete();
-        $txt = "home/";
+        $txt = "home/".$idAv."";
+        /* $txt = "home"; */
         return redirect($txt);
         //return $venta;
     }

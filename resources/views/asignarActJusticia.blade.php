@@ -344,6 +344,10 @@ function deleteDoc(ruta,iddoc) {
             <a href="{{route('home')}}">
               <button type="button"class="btn btn-dark btn-lg">Cancelar</button>
             </a> 
+            <a href="{{route('panelMaps')}}" target="_blank">
+              {{-- <button type="button"class="btn btn-success btn-lg" title="Click aqui si desea agregar una ubicacion">Ubicacion</button> --}}
+              ¿desea agregar una ubicacion?
+            </a> 
             
              
         </form>

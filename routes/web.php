@@ -73,4 +73,7 @@ Route::post('ajaxNombresEncargadosDepartamentos',['as' =>'ajaxNombresEncargadosD
 Route::post('ajaxDatosActividades',['as' =>'ajaxDatosActividades','uses'=>'HomeController@ajaxDatosActividades']);
 Route::post('arregloDATOSTODOS',['as' =>'arregloDATOSTODOS','uses'=>'HomeController@arregloDATOSTODOS']);
 
+// zona del mapa
+Route::get('/panelMaps', 'LocationController@index')->name('panelMaps');
+
 
